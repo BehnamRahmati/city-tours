@@ -1,0 +1,86 @@
+
+.tour {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-bottom: 1rem;
+  background-color: #eee;
+}
+.tour .img__container {
+  border: 5px solid darkcyan;
+  height: 100%;
+}
+.tour .img__container img {
+  width: 100%;
+  height: 100%;
+}
+
+  .tour .img__container {
+    position: relative;
+  }
+.tour .img__container .closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.4s linear all;
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -ms-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    opacity: 0;
+    color: dodgerblue;
+}
+  
+.tour .img__container:hover  .closeBtn {
+  opacity: 1;
+ 
+}
+
+.tour__info {
+  padding: 1rem 0.5rem;
+}
+.tour__info h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: dodgerblue;
+}
+.tour__info h4 {
+  text-transform: capitalize;
+  margin: 0.4rem 0px 0.6rem;
+}
+
+.tour__info h5 {
+  font-size: 1rem;
+  color: crimson;
+}
+.tour__info h5  span {
+  margin-left: 0.5rem;
+  color: deeppink;
+  cursor: pointer;
+}
+.tour__info p {
+  padding:  0.5rem  0;
+}
+
+
+@media only screen and (max-width:768px) {
+  .tour {
+    display: block;
+    width: 100%;
+    background-color: #eee;
+    margin: 2rem 0;
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+  .tour .img__container img {
+    width: 100%;
+    display: block;
+    min-height: 13rem;
+  }
+}

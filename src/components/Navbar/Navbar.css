@@ -1,0 +1,48 @@
+.navbar {
+  width: 100%;
+  max-width: 100vw;
+  height: 72px;
+  margin: 0 auto;
+  box-shadow: 1px 0 5px #ccc;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.navbar__logo {
+  height: 100%;
+}
+.navbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding-right: 5rem;
+}
+.navbar__link {
+  text-transform: capitalize;
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: #333;
+  padding: 1.5rem 2vw;
+  font-weight: 700;
+}
+
+.navbar__link:hover {
+  color:deeppink ;
+  border-bottom: 1px solid deeppink;
+  background-color: rgba(0, 139, 139, 0.1);
+}
+
+.navbar__link.active {
+  color: deeppink;
+}
+
+
+@media only screen and (max-width: 1000px){
+  .navbar__link {
+  font-size: 1.3rem;
+}
+.navbar__links {
+  padding-right: 0;
+}
+}
